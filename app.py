@@ -100,7 +100,3 @@ with open("college_chatbot_dataset_500.csv","rb") as f:
     data = f.read()
 st.sidebar.download_button("Download dataset (CSV)", data, file_name="college_chatbot_dataset_500.csv", mime='text/csv')
 
-st.sidebar.markdown(\"\"\"---
-**Notes:** The Hindi and Marathi translations are generated programmatically and may need human review.
-For production, consider transformers (IndicBERT/XLM-R) or embeddings + vector DB for retrieval.
-\"\"\")
